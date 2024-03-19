@@ -1,0 +1,42 @@
+<!--Using any of the tools you've worked with so far, create a game of Tic-Tac-Toe.
+Create a Tic-Tac-Toe game grid using your HTML element of choice.
+When a cell in the grid is clicked, an X or O should appear in that spot depending on whose turn it is.
+A heading should say whether it is X's or O's turn and change with each move made.
+A button should be available to clear the grid and restart the game.
+When a player has won, or the board is full and the game results in a draw, a Bootstrap alert or similar Bootstrap component should appear across the screen announcing the winner.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week.11.TicTacToe</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container" id="body">
+    <h1 class="title">Tic Tac Toe, YO!</h1>
+    <div class="container" id="gamegrid">
+      <div cellNum="0" class="cell">0</div>
+      <div cellNum="1" class="cell">1</div>
+      <div cellNum="2" class="cell">2</div>
+      <div cellNum="3" class="cell">3</div>
+      <div cellNum="4" class="cell">4</div>
+      <div cellNum="5" class="cell">5</div>
+      <div cellNum="6" class="cell">6</div>
+      <div cellNum="7" class="cell">7</div>
+      <div cellNum="8" class="cell">8</div>
+      <br />
+
+      <h4 class="alert alert-warning" role="alert" id="gameUpdate"></h4>
+    </div>
+    <div class="button">
+      <button type="btn" id="reset">Restart Game</button>
+    </div>
+
+    <script src="tictactoe.js"></script>
+  </body>
+</html>
